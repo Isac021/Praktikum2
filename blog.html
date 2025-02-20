@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+          body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container{
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a{
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+
+
+        }
+        .animated-button{
+            display: inline-block;
+            padding: 5px 10px;
+            color:  white;
+            background-color: #333;
+            border-radius: 5px;
+            animation: pulse 1.5s infinite;
+
+
+        }
+        @keyframes pulse{
+            0% {transform: scale(1); }
+            50% {transform: scale(1.1);}
+            100% {transform: scale(1);}
+        }
+        footer{
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        .blog-post {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .blog-post h2 {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="animated-button">Start</a>
+        <a href="about.html">About us</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+    <div class="container">
+        <h1>Блог</h1>
+        <div class="blog-post">
+            <h2>Първа публикация</h2>
+            <p>Алберт Айнщайн, с неговата Специална и Генерална теория на относителността, промени нашето разбиране за време, пространство и гравитация. Специалната теория (1905) показва, че времето и пространството не са абсолютни, а зависими от наблюдателя, докато уравнението 
+                𝐸
+                =
+                𝑚
+                𝑐
+                2
+                E=mc 
+                2
+                  показва, че енергията и масата са взаимозаменяеми. Генералната теория на относителността (1915) описва гравитацията като изкривяване на пространството, а не като сила. Откритията му положиха основите на модерната физика и промениха нашето възприятие за Вселената.</p>
+        </div>
+        <div class="blog-post">
+            <h2>Втора публикация</h2>
+            <p>Айнщайн не е само велик учен, но и активен общественик. Борил се е за мир, социална справедливост и човешки права, като е бил критичен към войната и насилието. Въпреки че е подписал писмо, призоваващо за създаване на атомна бомба, по-късно съжалява за това. Освен физик, Айнщайн обичал музиката и вярвал, че науката и изкуствата трябва да бъдат свързани, което го прави една от най-вдъхновяващите личности на 20-ти век.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 all rights protected.
+    </footer>
+</body>
+</html>

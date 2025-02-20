@@ -30,9 +30,55 @@
             color: #555;
             margin: 20px 0;
         }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a{
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+
+
+        }
+        .animated-button{
+            display: inline-block;
+            padding: 5px 10px;
+            color:  white;
+            background-color: #333;
+            border-radius: 5px;
+            animation: pulse 1.5s infinite;
+
+
+        }
+        @keyframes pulse{
+            0% {transform: scale(1); }
+            50% {transform: scale(1.1);}
+            100% {transform: scale(1);}
+        }
+        footer{
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="index.html" class="animated-button">Start</a>
+        <a href="about.html">About us</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+    </nav>
     <div class="container">
         <h1>Алберт Айнщайн</h1>
         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" alt="Алберт Айнщайн">
@@ -46,5 +92,8 @@
         <blockquote>"Животът е като карането на колело. За да запазиш баланса си, трябва да продължиш да се движиш."</blockquote>
         <blockquote>"Не всичко, което може да се преброи, има значение, и не всичко, което има значение, може да се преброи."</blockquote>
     </div>
+    <footer>
+        &copy; 2025 all rights protected.
+    </footer>
 </body>
 </html>
