@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -126,4 +127,135 @@
         &copy; 2025 all rights protected.
     </footer>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+             body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container{
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery img{
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .slideshow-container{
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .slides{
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+        .slide{
+            min-width: 100%;
+        }
+        .video-container{
+            margin-top: 20px;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a{
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+
+
+        }
+        .animated-button{
+            display: inline-block;
+            padding: 5px 10px;
+            color:  white;
+            background-color: #333;
+            border-radius: 5px;
+            animation: pulse 1.5s infinite;
+
+
+        }
+        @keyframes pulse{
+            0% {transform: scale(1); }
+            50% {transform: scale(1.1);}
+            100% {transform: scale(1);}
+        }
+        footer{
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+    </style>
+    <script>
+        let slideIndex = 0;
+        function showSlides(){
+            let slides = document.getElementsByClassName(".slides");
+            let totalSlides = document.querySelectorAll(".slide").length;
+            slideIndex = (slideIndex + 1) % totalSlides;
+            slides.style.transform = 'translateX(-${slideIndex * 100}%)';
+            setTimeout(showSlides,5);
+        }
+        window.onload = showSlides;
+    </script>
+</head> 
+<body>
+    <nav>
+        <a href="index.html" class="animated-button">Start</a>
+        <a href="about.html">About us</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+    <div class="container">
+        <h1>Галерия</h1>
+        <div class="gallery">
+            <img src="image1.jpg">
+            <img src="image2.jpg">
+            <img src="image3.jpg">
+        </div>
+        <h2>Slideshow</h2>
+        <div class="slideshow-container">
+            <div class="slides">
+             <img class="slide" src="image4.jpg">
+             <img class="slide" src="image5.jpg">
+             <img class="slide" src="image6.jpg">
+            </div>
+        </div>
+        <div class="video-container">
+            <h2>Video</h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=KyjQJBDD5V4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 all rights protected.
+    </footer>
+</body>
+>>>>>>> 833c3795f81fbebc3088e296cc7e5edb5c9eae7a
 </html>
